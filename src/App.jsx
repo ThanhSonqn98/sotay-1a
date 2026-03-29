@@ -352,7 +352,7 @@ function TeacherGrading({ student, date, initialData, initialWeeklyData, onSaveD
   return (
     <div className="bg-white rounded-xl shadow-lg overflow-hidden max-w-2xl mx-auto min-h-[80vh] flex flex-col">
       <div className="bg-blue-50 p-4 border-b border-blue-100 flex justify-between items-center">
-        
+      <button onClick={onBack} className="text-blue-600 flex items-center gap-1 font-medium hover:underline"><ChevronLeft size={20} /> Quay lại</button>
         <div className="text-right"><h2 className="font-bold text-lg text-blue-900">{student.name}</h2><p className="text-xs text-slate-500">Ngày làm việc: {date.split('-').reverse().join('/')}</p></div>
       </div>
 
@@ -462,7 +462,7 @@ function ParentDashboard({ student, getRating, getWeeklyReview, onBack }) {
   return (
     <div className="space-y-6">
       <div className="flex justify-between items-center mb-2">
-        <button onClick={onBack} className="text-blue-600 flex items-center gap-1 font-medium hover:underline"><ChevronLeft size={20} /> Quay lại</button>
+        
       </div>
 
       <div className="bg-white rounded-xl shadow-lg border-2 border-blue-600 p-6 relative overflow-hidden">
